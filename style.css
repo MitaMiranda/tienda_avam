@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding:0;
+    border:0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.head{
+    display: flex;
+    align-items: center;
+    height: 63px;
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+    font-optical-sizing: auto;
+}
+
+.logo{
+    margin-left: 30px;
+   
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000000;
+    text-transform:uppercase;
+    font-size: 20px;
+}
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar a:hover{
+    background:#e4e4e4;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: #ffffff; 
+}
+
+.header-carousel .item img {
+    display: block;
+    width: 100%; /* Ajustar el ancho al 100% para ocupar todo el espacio del contenedor */
+    height: 585px; /* Automáticamente ajusta la altura para mantener la relación de aspecto */
+    max-height: 585px; /* Establecer una altura máxima para las imágenes */
+    object-fit: cover; /* Para que la imagen se ajuste dentro del contenedor manteniendo su relación de aspecto */
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    z-index: 2; /* Asegura que el contenido esté delante del carrusel */
+}
+
+.header-content .title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header-content .btn-home {
+    margin-top: 20px;
+}
+
+/* Estilos para el carrusel */
+.header-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que el carrusel esté detrás del contenido */
+}
+
+/* Resto de tus estilos CSS */
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+    font-family: fantasy;
+}
+ 
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #000000;
+    padding: 0 10px;
+    
+}
+
+/* Estilos para el campo de búsqueda */
+.search-box {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #ffffff; /* Cambia el color del botón */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-top-right-radius: 5px; /* Agrega bordes redondeados */
+    border-bottom-right-radius: 5px; /* Agrega bordes redondeados */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+.search-btn i {
+    color: #000000; /* Cambia el color del icono */
+}
+
+/* Estilos para el navbar */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000; /* Color de los enlaces del navbar */
+    /* font-weight: bold; */
+}
+
+.btn-login {
+    position: relative; /* Establece la posición como relativa */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+    display: inline-block;
+    margin-top: 15px; /* Ajusta el margen superior según sea necesario */
+    padding: 10px 40px;
+    border: 2px solid #000000;
+    color: #ffffff;
+    text-decoration: none;
+    background: #000000;
+    border-radius: 20px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15 px;
+    padding: 10px 40px;
+    border: 2px solid #000000;
+    color:#ffffff ;
+    text-decoration: none;
+    background:#000000;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: none;
+
+}
+
+.btn-home{
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 90px;
+    background: #ffffff;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width:17rem;
+    background: #d0d0d0;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(184, 184, 184, 0.5);
+    margin: 2rem;
+}
+.box-container .box:hover {
+    background: #d5d5d5;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width:3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #000000;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3{
+    font-size: 20px;
+    color: #9c27b0;
+}
+
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+
+}
+
+.about {
+    background: url(img/8.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.about p{
+    max-width: 1600px; 
+    margin: 0 auto;
+}
+
+
+
+.contact{
+    padding-top: 20px;
+    background: #ffffff;
+    padding-bottom: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+    
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau{
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+.input-padron {
+    width: calc(100% - 20px); /* Se resta 20px para considerar el padding del input */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para el botón de enviar */
+.enviar {
+    display: inline-block;
+    margin-top: 15 px;
+    padding: 10px 40px;
+    border: 2px solid #000000;
+    color:#ffffff ;
+    text-decoration: none;
+    background:#000000;
+    border-radius: 20px;
+
+}
+
+.enviar:hover {
+    color:#000000 ;
+    background: none;
+}
+
+/* Estilos para el contenedor de radio buttons */
+fieldset {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de checkbox */
+.checkbox {
+    margin-bottom: 20px;
+    display: block;
+}
+.checkbox a{
+    text-decoration:none;
+    color: #000000;
+
+}
+
+/* Estilos para el contenedor de opciones select */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+    max-width: 800px;
+    margin: 0 auto; /* Esto centra el contenedor en la página */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el logo en el pie de página */
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para el texto de derechos de autor en el pie de página */
+.copyright {
+    margin-top: 10px;
+}
+
+/* Estilos hombre */
+.hombre {
+    background: url(img/9.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+.hombre .title {
+    font-size: 200px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative; /* Añadido para posicionar el carrusel correctamente */
+}
+
+.carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-inner > img {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+/* Estilos mujer */
+.mujer {
+    background: url(img/166.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.mujer .title {
+    font-size: 300px;
+    margin-bottom: 20px;
+    font-family: "Pinyon Script", cursive;
+}
+
+
+
+/* Estilos accesorios */
+.accesorios {
+    background: url(img/25.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.accesorios .title {
+    font-size: 300px;
+    margin-bottom: 20px;
+    font-family: "Pinyon Script", cursive;
+}

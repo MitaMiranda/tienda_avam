@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ebda0fc424.js" crossorigin="anonymous"></script>
+    <title>AVAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="img/fondo-tn.png" width="100" height="100" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="mujer.html">Mujer</a>
+            <a href="hombre.html">Hombre</a>
+            <a href="accesorios.html">Accesorios</a>
+            <!-- Elemento de búsqueda -->
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Buscar">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <form id="loginForm" action="login.php" method="POST">
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" name="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+            <label for="password">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" class="input-padron" required>
+            <label class="checkbox"><input type="checkbox" checked>Mantener Sesion Iniciada</label>                
+            <br>
+            <input type="submit" value="Iniciar Sesión" class="enviar">
+        </form>
+        
+    </main>
+    <footer>
+        <img src="img/fondo-tn.png"  alt="Logo de AVAM">
+        <p class="copyright">&copy Copyright AVAM - 2024</p>
+    </footer>
+</body>
+</html>
